@@ -1,0 +1,550 @@
+/**{
+	margin:0;
+	padding: 0;
+}*/
+
+
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+nav{
+	margin-top:60px;
+	padding:5px;
+}
+
+#logo{
+	float:left;
+	margin: -150px 0px 0px -200px;
+	
+
+}
+
+#mainHeader{
+	height:90px;
+	/*background: url("../img/logo.png") no-repeat;*/
+	margin: 0;
+	padding: 3px;
+}
+
+body { 
+	/*background-color: white;*/
+    background-image: url("../img/c.jpg");
+    background-repeat: repeat;
+
+
+   /* background-position: center;
+    background-repeat:  no-repeat ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  /*font-family:Verdana,Helvetica,Arial,sans-serif;
+  color:#A79787;*/
+  	/* Fallback for web browsers that don't support RGBa */
+    /*background-color: rgb(0, 0, 0);*/
+    /* RGBa with 0.6 opacity */
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    /* For IE 5.5 - 7*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);*/
+    /* For IE 8*/
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";*/
+}
+
+#wrapper{
+	margin:0;
+	padding:0;
+	font-family:Verdana,Helvetica,Arial,sans-serif;
+	color: #262122;
+
+	/*color:#9f9d97;*/
+}
+
+#registration li{	
+	color: white;
+	float: right;
+	list-style: none;	
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	font-size:0.8em;	
+ 	
+}
+
+
+#topMenu{
+	
+	list-style-type:none;
+	width: auto;
+	position:relative;
+	display:block;
+	height:33px;
+	font-size:1em;
+	/*font-family:Verdana,Helvetica,Arial,sans-serif;*/
+	margin:0;
+	padding:0;
+	/*color:#A79787;*/
+	padding-right: 200px;
+	
+
+}
+
+#leftSide{
+
+	padding:5px;
+	padding-left: 12px;
+	list-style-type:none;
+	position:relative;
+	display:block;	
+	float: left;
+	font-size:1em;
+	margin:80px 0 0 0 ;
+
+	/*border-top: double;
+	border-bottom: double;
+	border-radius: 20px 20px 20px;*/
+	width:150px;
+
+
+}
+
+#leftSide li{
+
+	margin:0;
+	padding: 15px;
+	background: #ddd;
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(221, 221, 221, 0.5));
+	background: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(221, 221, 221, 0.5));
+	background: -webkit-linear-gradient(rgba(253, 253, 253, 0.5), rgba(223, 223, 223, 0.5));
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	border: 1px solid #eee;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px;	
+
+}
+
+#topMenu li:hover, #topMenu li:active{
+	margin-top: -3px;
+
+}
+
+#leftSide li:hover, #leftSide li:active{
+	margin-left: -7px;
+	width:120px;
+
+}
+
+
+
+#topMenu li {
+	display:block;
+	float:right;
+	margin:0;
+	padding:5px;
+
+	/*border-bottom: double;
+	border-radius: 20px 20px 20px;*/
+	background: #ddd;
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0.8), rgba(221, 221, 221, 0.5));
+	background: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(221, 221, 221, 0.5));
+	background: -webkit-linear-gradient(rgba(253, 253, 253, 0.8), rgba(223, 223, 223, 0.5));
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	border: 1px solid #eee;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px;
+
+	
+}
+
+
+
+#topMenu li a , #registration li a,#leftSide li a{
+	
+	/*color:#9f9d97;*/
+	color: #262122;
+	text-decoration:none;
+	height:24px;
+	padding:5px 15px 0;
+	font-weight:normal;
+}
+
+#registration li a{
+	color: white;
+}
+
+#topMenu li a , #registration li a{
+	float:right;
+}
+
+
+
+#topMenu li a:hover,#topMenu .active ,#registration li a:hover, #registration .active, 
+	#leftSide li a:hover, #leftSide .active{
+	color:#6a6768;
+	text-decoration:none;
+	/*font-size: 1.1em; */
+	-webkit-text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	-moz-text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+
+
+}
+
+#topMenu .active a ,#registration .active a, #leftSide .active a{
+	/*color:#dedbd4;*/
+	color:#6a6768;
+	font-weight:300;
+}
+
+section{
+	/*height:550px;*/
+	/*background-image: url("../img/bg1.png");
+    background-repeat: repeat;
+    margin: 20px;
+    border: 1px solid #eee;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px;*/
+}
+
+#main{
+	
+	margin-top:-10px;
+	margin-left:140px;
+	margin-right: 140px;
+	margin-bottom: 20px;
+	padding-top: 70px;
+	padding-left: 150px;
+	padding-right: 100px;
+	padding-bottom: 40px;
+	background: #ddd;
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(221, 221, 221, 0.5));
+	background: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(221, 221, 221, 0.5));
+	background: -webkit-linear-gradient(rgba(253, 253, 253, 0.5), rgba(223, 223, 223, 0.5));
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+	border: 1px solid #eee;
+	border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border: 20px 20px 20px 20px;
+	
+
+	
+}
+
+.pic{	
+	margin:10px;
+	width: 210px;
+	height: 140px;
+	/*border:solid;*/
+	padding: 0px;
+	display: inline-block;
+     
+     position:relative;
+     overflow:hidden;
+      border: 3px solid #000;
+	/*border-radius: 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border: 10px 10px 10px 10px;
+	-o-border: 10px 10px 10px 10px;*/
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    
+
+
+	
+	
+}
+
+.picImg{
+	margin:0;
+	padding: 0;
+	/*position: relative;*/
+	position:absolute;
+     top:0px;
+     left:0px; 
+     width:100%;
+	
+	/*box-shadow: 5px 5px 5px #000;*/	
+	/*width: 230px;*/
+	/*overflow: hidden;*/
+
+
+
+}
+
+.pic h2{
+	padding: 5px;
+}
+
+
+
+.picInfo{
+	display: none;	
+	margin: 0;
+	width: 210px;
+	position: absolute;    
+	padding:5px 0 0 0;	
+    color:#fff;
+	height: auto;
+	font-weight:normal;
+	font-size: 0.8em;
+	background: #000;
+	background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+
+}
+
+
+/*reg form*/
+
+#register, 
+#login{
+    /*position: absolute;*/
+    top: 0px;
+    width: 400px; 
+    padding: 150px 6% 60px 6%;
+    
+    margin: 20px 170px 20px 170px;
+	
+	
+    
+    
+}
+
+#register{
+
+	background-image: url("../img/reg.png");
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#login{
+
+	background-image: url("../img/login.png");
+	background-repeat: no-repeat;
+	background-position: top;
+}
+/*#login{
+    z-index: 22;
+}*/
+
+/*.regForm{
+	
+	margin: 20px 170px 20px 170px;
+	padding-top: 150px;
+	width: 400px;
+	background-image: url("../img/reg.png");
+	background-repeat: no-repeat;
+	background-position: top;
+
+
+}*/
+
+.regForm input{
+	/*padding-right: 10px;*/
+	/*width: 250px;*/
+	outline: none;
+	width: 92%;
+    margin-top: 4px;
+    padding: 10px 5px 10px 32px;    
+    border: 1px solid rgb(178, 178, 178);
+    box-sizing : content-box;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    transition: all 0.2s linear;
+
+}
+
+.regForm input:active, #regForm input:focus{
+    border: 1px solid rgba(91, 90, 90, 0.7);
+    background: rgba(238, 236, 240, 0.2);   
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+
+/*.regForm  h1{
+	font-size: 40px;
+	margin: 0;
+    padding: 2px 0 5px 0;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+
+}*/
+
+.labels{
+	padding: 5px;
+}
+
+
+
+#mainForm p.button input{
+    width: 100px;
+    cursor: pointer;    
+    padding: 10px;
+    background: #000;
+	background: -moz-linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+    color: #fff;
+    font-size: 14px;    
+    border: 1px solid #868686;    
+    margin-bottom: 5px;    
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1px; 
+    box-shadow:
+        0px 1px 3px 2px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 2px rgb(254, 254, 254),
+        0px 2px 2px 2px rgb(210, 210, 210);
+    transition: all 0.2s linear;
+}
+#mainForm p.button input:hover{
+    background: rgb(74, 17, 19);
+}
+#mainForm p.button input:active, #main p.button input:focus{
+    background: rgb(74, 17, 19);
+    color:#6a6768;
+    position: relative;
+    top: 1px;
+    border: 1px solid #000;  
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+.regForm p.regButton.button, .regForm p.logButton.button{
+
+    text-align: right;
+    margin: 5px 0;
+}
+
+
+::-webkit-input-placeholder  { 
+    color: rgb(190, 188, 188); 
+    font-style: italic;
+}
+input:-moz-placeholder, textarea:-moz-placeholder{ 
+    color: rgb(190, 188, 188);
+    font-style: italic;
+}
+
+.regForm p.change_link{
+    
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px ;
+    text-align: right;
+    border-top: 1px solid rgb(219, 229, 232);
+    border-radius: 0 0  5px 5px;
+    
+}
+.regForm p.change_link a {
+    display: inline-block;
+    font-weight: bold;
+   
+    padding: 2px 6px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid white;
+    transition: all 0.4s  linear;
+}
+.regForm p.change_link a:hover {
+    color: #c7c7c7;
+    
+    border: 1px solid #c7c7c7;
+}
+.regForm p.change_link a:active{
+    position: relative;
+    top: 1px;
+} 
+
+#register{  
+    z-index: 21;
+    opacity: 100%;
+}
+
+
+
+
+#toregister:target ~ .regForm #register,
+#tologin:target ~ .regForm #login{
+    z-index: 22;
+    animation-name: fadeInLeft;
+    animation-delay: .1s;
+}
+
+.animate{
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+     
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#toregister:target ~ .regForm #login,
+#tologin:target ~ .regForm #register{
+    animation-name: fadeOutLeftBig;
+}
+ 
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+     
+    100% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+/*reg form end*/
+
+
+#arrowleft{
+	float:left;
+	margin-left: 50px;
+	margin-top: 220px;
+
+	
+}
+
+#arrowright{
+	float:right;
+	margin-right: 250px;
+	margin-top: 220px;
+	
+	
+}
+
+footer{
+	height:20px;
+	color:white;
+	float:right;
+	font-size: 0.8em;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	color: rgb(253, 253, 253);
+}
