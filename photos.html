@@ -1,0 +1,36 @@
+
+					<div class="pic">
+						<img class="picImg" src="img/5.jpg" alt="pic" >
+						<h2 class="picInfo">Име:
+					    <br>
+						Автор:</h2>
+					</div>		
+					<div class="pic">
+
+						<img class="picImg" src="img/3.jpg" alt="pic" >
+						<h2 class="picInfo">Име:
+					    <br>
+						Автор:</h2>
+						
+					</div>
+					<div class="pic">
+						<img class="picImg" src="img/4.jpg" alt="pic" >
+						<h2 class="picInfo">Име:
+					    <br>
+						Автор:</h2>
+					</div>
+					<div class="pic">
+						<img class="picImg" src="img/5.jpg" alt="pic" >
+						<h2 class="picInfo">Име:
+					    <br>
+						Автор:</h2>
+					</div>
+<script type="text/javascript">
+ function showPhotos(){
+        $(this).parent(".pic").find(".picInfo").slideToggle('fast'); 
+        console.log("aaa");       
+    }
+
+    $(".pic").on("mouseenter", ".picImg", showPhotos);
+    $(".pic").on("mouseleave", ".picImg", showPhotos);
+</script>

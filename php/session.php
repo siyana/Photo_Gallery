@@ -4,6 +4,7 @@
 
 require_once "database_config.php";
 
+
 	
  
 	//Array to store validation errors
@@ -39,7 +40,7 @@ require_once "database_config.php";
 	if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 		session_write_close();
-		header("location: ../login.php");
+		header("location: ../#login");
 		exit();
 	}
  
@@ -55,7 +56,7 @@ require_once "database_config.php";
 
 		if(mysqli_num_rows($result) > 0) {
 			//Login Successful
-			var_dump(mysqli_num_rows($result));
+			// var_dump(mysqli_num_rows($result));
 			
 			session_regenerate_id();
 			
@@ -69,7 +70,7 @@ require_once "database_config.php";
 			// var_dump($_SESSION);
 			
 			session_write_close();
-			header("location: ../logged.php");
+			header("location: ../#logged");
 			
 
 			exit();
@@ -90,14 +91,18 @@ require_once "database_config.php";
 	}else {
 		// die("Query failed");
 		//Login failed
-			// echo "aaaaaaaaaaaaaaaaaa";
-			$errmsg_arr[] = 'user name and password not found';
-			$errflag = true;
-			if($errflag) {
-				$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+			 echo "User name or password not found.";
+			// $errmsg_arr[] = 'user name and password not found';
+			// $errflag = true;
+			// if($errflag) {
+			// 	$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 				session_write_close();
-				header("location: ../login.php");
+
+				header("location: ../#login");
 
 				exit();
-			}
+			// }
 }
+
+
+
