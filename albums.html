@@ -1,43 +1,46 @@
-<div class="pic">
-						<img class="picImg" src="img/1.jpg" alt="pic" >
 
-						<h2 class="picInfo">Име:
-					    <br>
-						Автор:</h2>
-					
-					</div>
-					<div class="pic">
-						<img class="picImg" src="img/6.jpg" alt="pic" >
-						<h2 class="picInfo">Име:
-					    <br>
-						Автор:</h2>
-					</div>
-					<div class="pic">
-						<img class="picImg" src="img/2.jpg" alt="pic" >
-						<h2 class="picInfo">Име:
-					    <br>
-						Автор:</h2>
-					</div>
-					<div class="pic">
+<div id="mainForm">
+<div  class="animate form">
+<form id="imageform" class="regForm" method="post" enctype="multipart/form-data" action="php/photo_upload.php">
+	<p><label for="name" class="labels"  >Име:</label>
+							 <br><input type="text" name="name"  placeholder="Име" > <br></p>
+							<p><label for="desc" class="labels" >Описание: </label>
+							<br><input type="text" name="desc" placeholder="Име"  > <br></p>
+							 
+							<p><label for="access" class="labels"  >Достъп: </label>
+							<br><input type="text" name="access" required="required" placeholder="Достъп"  > <br></p>
+							
+							<p><label for="comment" class="labels"  >Коментар:</label>
+							 <br><input type="text" name="comment" required="required" placeholder="Коментар:"  > <br></p>
 
-						<img class="picImg" src="img/3.jpg" alt="pic" >
-						<h2 class="picInfo">Име:
-					    <br>
-						Автор:</h2>
-						
-					</div>
-					<div class="pic">
-						<img class="picImg" src="img/4.jpg" alt="pic" >
-						<h2 class="picInfo">Име:
-					    <br>
-						Автор:</h2>
-					</div>
+							 <p><label for="photoimg" class="labels"  >Добави снимка (размер до 1024px):</label>
+
+	 <input class="button" type="file" name="photoimg" id="photoimg" /><br></p>
+<p><label for="preview" class="labels">Preview of uploaded Image</label>
+<div id='preview' ></div>
+</p>
+
+</form> 
+</div>
+</div>
+
 <script type="text/javascript">
- function showPhotos(){
-        $(this).parent(".pic").find(".picInfo").slideToggle('fast'); 
-        console.log("aaa");       
-    }
+	$(document).ready(function(){
+		$('#photoimg').on('change', function(){ 
+		$("#preview").html('');
+		$("#current").hide();
+		$("#preview").html('<img src="ajax-loader.gif" alt="Uploading file...."/>');
+		$("#imageform").ajaxForm({
+		 target: '#preview'
+		}).submit();
+	});
 
-    $(".pic").on("mouseenter", ".picImg", showPhotos);
-    $(".pic").on("mouseleave", ".picImg", showPhotos);
+	 function showPhotos(){
+	        $(this).parent(".pic").find(".picInfo").slideToggle('fast'); 
+	        console.log("aaa");       
+	    }
+
+	    $(".pic").on("mouseenter", ".picImg", showPhotos);
+	    $(".pic").on("mouseleave", ".picImg", showPhotos);
+	});
 </script>

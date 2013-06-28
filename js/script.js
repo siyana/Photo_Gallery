@@ -14,21 +14,15 @@ $(document).ready(function(){
     });
 
     default_content = $('#main').html();
-    // default_menu= $('aside').html();
-    // console.log(default_content);
-    // console.log(default_menu);
+    
     
     setInterval("checkURL()",250);
 
     //photos info
 
-    // function showPhotos(){
-    //     $(this).parent(".pic").find(".picInfo").slideToggle('fast'); 
-    //     console.log("aaa");       
-    // }
+    
+   
 
-    // $(".pic").on("mouseenter", ".picImg", showPhotos);
-    // $(".pic").on("mouseleave", ".picImg", showPhotos);
 
 
 });

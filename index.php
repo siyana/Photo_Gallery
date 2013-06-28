@@ -12,8 +12,8 @@
 			<header id="mainHeader">
 
 				<ul id="registration">
-					<li><a href="#reg">Регистрация</a></li>
-					<li><a href="#login">Вход</a></li>					
+					<li><a href="#reg" id="aFirst">Регистрация</a></li>
+					<li><a href="#login" id="aSecond">Вход</a></li>					
 				</ul>
 				<nav>	
 					<ul id="topMenu">
@@ -60,6 +60,7 @@
 		</div>
 
 	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script> 
 	<script type="text/javascript" src="js/script.js"></script>
 	</body>
 	</html>	

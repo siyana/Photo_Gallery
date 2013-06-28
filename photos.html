@@ -26,6 +26,7 @@
 						Автор:</h2>
 					</div>
 <script type="text/javascript">
+$(document).ready(function(){
  function showPhotos(){
         $(this).parent(".pic").find(".picInfo").slideToggle('fast'); 
         console.log("aaa");       
@@ -33,4 +34,5 @@
 
     $(".pic").on("mouseenter", ".picImg", showPhotos);
     $(".pic").on("mouseleave", ".picImg", showPhotos);
+});
 </script>

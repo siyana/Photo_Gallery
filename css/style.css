@@ -54,6 +54,7 @@ body {
 #wrapper{
 	margin:0;
 	padding:0;
+	/*width: 960px;*/
 	font-family:Verdana,Helvetica,Arial,sans-serif;
 	color: #262122;
 
@@ -224,9 +225,9 @@ section{
 	padding-right: 100px;
 	padding-bottom: 40px;
 	background: #ddd;
-    background: -moz-linear-gradient(rgba(145,145,145, 0.5), rgba(82,82,82, 0.25));
-	background: -o-linear-gradient(rgba(145,145,145, 0.5), rgba(82,82,82, 0.25));
-	background: -webkit-linear-gradient(rgba(145,145,145, 0.5), rgba(82,82,82, 0.25));
+    background: -moz-linear-gradient(rgba(145,145,145, 0.5), rgba(100,100,100, 0.5));
+	background: -o-linear-gradient(rgba(145,145,145, 0.5), rgba(100,100,100, 0.5));
+	background: -webkit-linear-gradient(rgba(145,145,145, 0.5), rgba(100,100,100, 0.5));
 	/*background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(221, 221, 221, 0.25));
 	background: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(221, 221, 221, 0.25));
 	background: -webkit-linear-gradient(rgba(253, 253, 253, 0.5), rgba(221, 221, 221, 0.25));*/
@@ -312,7 +313,8 @@ section{
 /*reg form*/
 
 #register, 
-#login{
+#login, 
+#imageform{
     /*position: absolute;*/
     top: 0px;
     width: 400px; 
@@ -335,6 +337,12 @@ section{
 #login{
 
 	background-image: url("../img/login.png");
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#imageform{
+	background-image: url("../img/addPhoto.png");
 	background-repeat: no-repeat;
 	background-position: top;
 }
@@ -474,54 +482,7 @@ input:-moz-placeholder, textarea:-moz-placeholder{
     top: 1px;
 } 
 
-#register{  
-    z-index: 21;
-    opacity: 100%;
-}
 
-
-
-
-#toregister:target ~ .regForm #register,
-#tologin:target ~ .regForm #login{
-    z-index: 22;
-    animation-name: fadeInLeft;
-    animation-delay: .1s;
-}
-
-.animate{
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-}
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-     
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-#toregister:target ~ .regForm #login,
-#tologin:target ~ .regForm #register{
-    animation-name: fadeOutLeftBig;
-}
- 
-@keyframes fadeOutLeft {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-     
-    100% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-}
 
 /*reg form end*/
 

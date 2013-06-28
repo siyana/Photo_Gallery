@@ -6,6 +6,11 @@
 			unset($_SESSION['SESS_MEMBER_ID']);
 			unset($_SESSION['SESS_FIRST_NAME']);
 			unset($_SESSION['SESS_LAST_NAME']);
+			session_start();
+			unset($_SESSION['SESS_FIRST_NAME']);
+			session_destroy();
+			// var_dump("$_SESSION");
+// header("location: ../#login");
 
 ?>
 
@@ -77,5 +82,29 @@
 
 					
 					</div>
+
+<script type="text/javascript">
+// console.log($("#aFirst").attr("href","php/#logout"));
+// console.log($("#registration a[href='#reg']"));
+$("#aFirst").text("Регистрация");
+$("#aFirst").attr("href","#reg");
+
+
+$("#aSecond").text("Вход");
+$("#aSecond").attr("href","#login");
+
+
+// $("li.change").first().text("Мои снимки");
+// $("li.change").first().text("Мои албуми");
+// $("li.change").first().text("Добави снимка");
+// $("li.change").first().text("Добави албум");
+
+// $("#leftSide").children("li").children("a").first().text("Мои снимки");
+// $("#leftSide").children("li").children("a").next().text("Мои албуми");
+// $("#leftSide").children("li").children("a").next().text("Добави снимка");
+// $("#leftSide").children("li").children("a").next().text("Добави албум");
+
+
+</script>
 			
 			
